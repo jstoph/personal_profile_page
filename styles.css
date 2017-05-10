@@ -28,7 +28,7 @@ a:hover {
   background: #9b84a8;
   min-height: 30px;
   padding: 10px;
-  position: fixed;
+  position: static;
   text-align: center;
 }
 .nav {
@@ -71,7 +71,7 @@ header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 35%;
   border: 3px solid white;
   transition: all .5s;
 }
@@ -93,7 +93,6 @@ header .profile-image:hover {
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
-  max-width: 500px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
@@ -101,6 +100,7 @@ header .profile-image:hover {
   transition: all .5s;
   color: #706775;
 }
+
 .card:hover {
   border-color: #b695c9;
 }
@@ -174,15 +174,11 @@ a.social:hover {
 PAGE: CONTACT
 *********************************/
 #contact .card {
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 #contact .card.general {
   max-width: 750px;
-}
-
-#contact .card.details {
-  max-width: 250px;
 }
 
 .contact-info {
@@ -248,6 +244,10 @@ PAGE: CONTACT
     font-size: 1.3em;
     max-width: 1200px;
     margin: 40px auto;
+  }
+
+  #contact .card.details {
+    max-width: 250px;
   }
 
 }
